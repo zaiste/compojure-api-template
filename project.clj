@@ -1,4 +1,4 @@
-(defproject compojure-api/lein-template "0.1.4"
+(defproject atw-api/lein-template "0.1.5"
   :description "Compojure API project template for Leiningen"
   :url "https://github.com/zaiste/compojure-api-template"
   :license {:name "Eclipse Public License"

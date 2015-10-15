@@ -1,11 +1,11 @@
-(ns leiningen.new.compojure-api
+(ns leiningen.new.atw-api
   (:require [leiningen.new.templates :refer [renderer year name-to-path ->files]]))
 
-(defn compojure-api [name]
+(defn atw-api [name]
   (let [data {:name name
               :sanitized (name-to-path name)
               :year (year)}
-        render #((renderer "compojure_api") % data)]
+        render #((renderer "atw_api") % data)]
     (->files data
              "resources/public"
              ["src/{{sanitized}}/handler.clj" (render "handler.clj")]
